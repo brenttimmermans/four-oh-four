@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.155.0/config-schema.json",
+  "name": "four-oh-four",
+  "compatibility_date": "2026-10-30",
+  // The whole site is the 404 page: every path, including "/", renders
+  // 404.html with a 404 status.
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
